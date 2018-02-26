@@ -1,0 +1,38 @@
+body {
+  background-color: bisque;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+  border: 10px dashed green;
+}
+
+header {
+  display: flex;
+}
+
+ul {
+  background-color: darkkhaki;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 100px;
+  background-color: cyan;
+}
+
+aside {
+  width: 100px;
+  background-color: red;
+}
+
+section {
+  width: 100px;
+  background-color: darkorange;
+}
+/*# sourceMappingURL=style.css.map */

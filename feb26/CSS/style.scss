@@ -1,0 +1,36 @@
+body{
+    background-color: bisque;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+
+}
+nav{
+    border: 10px dashed green;
+}
+header{
+    display: flex;
+}
+
+ul{
+    background-color: darkkhaki;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction:column-reverse;
+}
+article{
+width: 100px;
+background-color: cyan;
+// float: left;
+
+}
+aside{
+    width: 100px;
+    background-color: red;
+    // float: left;
+}
+section{
+    width: 100px;
+    background-color: darkorange;
+}

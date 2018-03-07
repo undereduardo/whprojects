@@ -1,0 +1,27 @@
+body {
+  background-color: aqua;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+section {
+  height: 600px;
+  background-color: green;
+  padding: 5px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+div {
+  flex: 1px;
+  font-size: 48px;
+  color: white;
+  background-color: pink;
+  margin: 6px;
+}
+/*# sourceMappingURL=style.css.map */

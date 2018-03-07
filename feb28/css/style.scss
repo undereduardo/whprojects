@@ -1,0 +1,28 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+h1{
+
+    color:white;
+}
+section{
+    height: 600px;
+background-color: green;
+padding: 5px;
+margin: 50px;
+display: flex;
+flex-direction: row-reverse;
+//justify-content:space-around;
+align-items: stretch;
+
+}
+div{
+flex:1px;
+//width: 200px;
+//height: 100px;
+font-size: 48px;
+color: white;
+background-color: pink;
+margin: 6px;   
+}

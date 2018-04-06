@@ -1,0 +1,33 @@
+nav {
+  background-color: salmon;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 5px;
+}
+
+nav spa
+nav.vertical {
+  position: fixed;
+  width: 35%;
+  height: 100vh;
+}
+
+nav spa
+nav.vertical ul {
+  flex-direction: column;
+}
+
+nav spa
+nav.vertical main.vertical {
+  margin-left: 28%;
+}
+/*# sourceMappingURL=challenge.css.map */

@@ -86,31 +86,22 @@
 //loop through arugment array
 // each pargagraph to be each color
 
-var pargagraphs = document.querySelectorAll('p');
+var paragraphs = document.querySelectorAll('p');
 
-function getUsercolors(){
-    var userColors = prompt ('pick some colors seperate.'). split('');
-    var userTrimmedcolors = []
-    for(var i =0; i < userColors.length; i++){
-        userTrimmedcolors.push(userColors[i].trim());
-
-
+function getUserColors(){
+    var userColors = prompt('pick some colors (comma separated)').split(',');
+    
+    var userTrimmedColors = [];
+    for(var i = 0; i < userColors.length; i++){
+        userTrimmedColors.push(userColors[i].trim());
     }
-
-   // var color1 = prompt ('please pick a color');
-    //var color2 = prompt ('please pick a color');
-    //var color3 = prompt ('please pick a color');
-
-    assignUserColors(color1, color1, color3);
-
-}
-function assignUserColors(x, y, z){
-    for (var i = 0; i < x.length.length; i++){
-
-        pargagraphs[i].style.color = x.length [i];
-    }
-
-
+    assignUserColors(userTrimmedColors);
 }
 
-getUsercolors();
+function assignUserColors(x){
+    for(var i = 0; i < x.length; i++){
+        paragraphs[i].style.color = x[i];
+    }
+}
+
+getUserColors();

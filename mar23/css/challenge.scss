@@ -1,0 +1,27 @@
+nav{
+background-color: salmon;
+ul{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li{
+margin: 5px;
+
+}
+spa
+nav.vertical
+{
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+ul{
+    flex-direction: column;
+}
+main.vertical{
+    margin-left: 28%;
+}
+}
+}

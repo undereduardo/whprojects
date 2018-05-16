@@ -49,6 +49,7 @@ var plurals = ['fish', 'monkey', 'shoes', 'cactii'];
 var adj =['attractive','bald','beautiful','chubby','clean'];
 var verb = ['become','bite','break','bring','build'];
 var number =['1','2', '3','4','5'];
+var liquid =['water', 'coke', 'pepsi','powerade', 'mtn dew'];
 for (var i = 0; i < spans.length; i++){
    var s = spans[i];
 
@@ -69,6 +70,9 @@ for (var i = 0; i < spans.length; i++){
        break;
        case 'verb':
        setText(s, verb);
+       break;
+       case 'liquid':
+       setText(s,liquid);
        break;
         default:
         

@@ -1,0 +1,501 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+/* home page */
+.headers {
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  transition: padding 0.5s, color 0.5s;
+}
+
+.navbar-clr {
+  background: white;
+}
+
+#name {
+  text-transform: none !important;
+  color: #aaa;
+  font-weight: 400;
+}
+
+#menu {
+  font-family: 'Muli', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-transparent {
+  background: transparent;
+  padding: 15px 0 15px 0;
+  border: none;
+}
+
+.navbar-transparent a {
+  color: white !important;
+}
+
+#navitems a:hover {
+  color: black !important;
+}
+
+hr {
+  border-color: black;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.current {
+  color: #7C4DFF !important;
+}
+
+#barmenu {
+  border: none;
+}
+
+#barmenu:hover, #barmenu:focus {
+  background-color: white !important;
+}
+
+.bg {
+  position: relative;
+  top: 0;
+  background-image: url("http://i64.tinypic.com/4igc41.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+}
+
+.hello {
+  font-family: 'Roboto Mono', monospace !important;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}
+
+/** Blinking cursor css **/
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* /home page */
+hr.light {
+  border-color: white;
+}
+
+a {
+  color: black;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+a:hover, a:focus {
+  color: #f05f40;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background-color: #CED7CC !important;
+}
+
+.text-faded {
+  color: #fff;
+  font-size: 18px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: #222222;
+  text-shadow: none;
+}
+
+::selection {
+  color: white;
+  background: #222222;
+  text-shadow: none;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: #222222;
+}
+
+.service-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+}
+
+@media (min-width: 992px) {
+  .service-box {
+    margin: 20px auto 0;
+  }
+}
+
+.service-box p {
+  margin-bottom: 0;
+}
+
+.pro-hr {
+  margin: 40px auto 30px;
+  padding: 0;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+  color: #CED7CC;
+  max-width: 500px;
+}
+
+/* portfolio box looks right in full screen view, looks weird in editor view, fix? -- portfolio box and skills display are now pushing to next line, why? */
+.portfolio-box {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  max-height: 315px;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  background: rgba(206, 215, 204, 0.9);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Muli', sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.text-primary {
+  color: #CED7CC !important;
+  font-size: 60px;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-default {
+  color: #222222;
+  border-color: white;
+  background-color: white;
+}
+
+.btn-default:focus, .btn-default.focus {
+  color: #222222;
+  border-color: #bfbfbf;
+  background-color: #e6e6e6;
+}
+
+.btn-default:hover {
+  color: #222222;
+  border-color: #e0e0e0;
+  background-color: #e6e6e6;
+}
+
+.btn-default:active, .btn-default.active,
+.open > .btn-default.dropdown-toggle {
+  color: #222222;
+  border-color: #e0e0e0;
+  background-color: #e6e6e6;
+}
+
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus,
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus,
+.open > .btn-default.dropdown-toggle.focus {
+  color: #222222;
+  border-color: #bfbfbf;
+  background-color: #d4d4d4;
+}
+
+.btn-default:active, .btn-default.active,
+.open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+
+.btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default.focus {
+  border-color: white;
+  background-color: white;
+}
+
+.btn-default .badge {
+  color: white;
+  background-color: #222222;
+}
+
+.btn-primary {
+  color: white;
+  border-color: #CED7CC;
+  background-color: #CED7CC;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: white;
+  border-color: #a4270d;
+  background-color: #eb3812;
+}
+
+.btn-primary:hover {
+  color: white;
+  border-color: #e13612;
+  background-color: #eb3812;
+}
+
+.btn-primary:active, .btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+  color: white;
+  border-color: #e13612;
+  background-color: #eb3812;
+}
+
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
+.open > .btn-primary.dropdown-toggle:hover,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle.focus {
+  color: white;
+  border-color: #a4270d;
+  background-color: #c93110;
+}
+
+.btn-primary:active, .btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus {
+  border-color: #CED7CC;
+  background-color: #CED7CC;
+}
+
+.btn-primary .badge {
+  color: #CED7CC;
+  background-color: white;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+/* home page */
+/* hrs */
+/* thick white hr */
+.white-hr {
+  margin: 40px auto 30px;
+  padding: 0;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+}
+
+/* thin white hr */
+.thin-white-hr {
+  margin: 40px auto 30px;
+  padding: 0;
+  border: 0;
+  border-top: solid 1px;
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+}
+
+/* hr with brackets */
+.div1 .div2 {
+  background: transparent;
+  color: #fff;
+  text-align: right;
+  padding: 70px 10% 50px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+}
+
+.div1 .div2 .intro-text {
+  max-width: 675px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+hr.bracket-hr, bracket-hr-2 {
+  margin: 40px auto 30px;
+  padding: 0;
+  max-width: 512px;
+  border: 0;
+  border-top: solid 3px;
+  text-align: center;
+}
+
+hr.bracket-hr:after, bracket-hr-2:after {
+  content: '\f121';
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -24px;
+  padding: 0 4px;
+  font-size: 32px;
+}
+
+hr.bracket-hr {
+  border-color: #fff;
+}
+
+hr.bracket-hr:after {
+  color: #fff;
+  background-color: #CED7CC;
+}
+
+/*end hr */
+.contact-fa {
+  color: #CED7CC;
+}
+/*# sourceMappingURL=style.css.map */
